@@ -1,0 +1,19 @@
+# Maven build output — never commit this folder
+target/
+*.class
+*.jar
+
+# IDE configuration files
+.idea/
+*.iml
+.vscode/
+.settings/
+*.classpath
+*.project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
