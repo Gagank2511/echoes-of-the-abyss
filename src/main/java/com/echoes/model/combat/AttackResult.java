@@ -7,9 +7,6 @@ package com.echoes.model.combat;
  * each class focused on a single responsibility: strategies calculate,
  * characters hold state, and {@code AttackResult} transfers data between
  * them and the view layer. This makes combat logic easy to test in isolation.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class AttackResult {
 

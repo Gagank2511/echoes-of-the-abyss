@@ -11,9 +11,6 @@ import java.util.Objects;
  * descend to the next. The dungeon is conquered when the final floor is cleared.
  * This class is deliberately simple: it tracks position and delegates all
  * room-level concerns to the {@link Floor} class.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class Dungeon {
 

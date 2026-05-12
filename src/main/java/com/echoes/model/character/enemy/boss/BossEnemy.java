@@ -22,9 +22,6 @@ import com.echoes.util.GameConstants;
  * <p>This demonstrates the Template Method pattern at two levels: the common
  * enrage logic lives here in {@code BossEnemy}, while the specific ability
  * content is deferred further to each concrete subclass.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public abstract class BossEnemy extends Enemy {
 

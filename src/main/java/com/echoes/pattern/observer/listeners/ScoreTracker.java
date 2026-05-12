@@ -10,9 +10,6 @@ import com.echoes.pattern.observer.GameEventListener;
  * more than dealing damage alone; defeating a boss or clearing the dungeon
  * awards a large bonus. The score is read-only from outside and cannot be
  * modified directly by any other component.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class ScoreTracker implements GameEventListener {
 

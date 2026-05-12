@@ -7,9 +7,6 @@ package com.echoes.util;
  * codebase makes balancing straightforward — a single change in one
  * place propagates everywhere it is needed. All fields are
  * {@code public static final} so no instance is ever required.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class GameConstants {
 

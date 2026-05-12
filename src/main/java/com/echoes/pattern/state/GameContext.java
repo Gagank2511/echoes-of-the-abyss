@@ -20,9 +20,6 @@ import com.echoes.view.GameRenderer;
  * <p>Keeping all shared services in the context avoids repetitive constructor
  * arguments across every state class and provides a clean central point for
  * the game's runtime dependencies.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class GameContext {
 

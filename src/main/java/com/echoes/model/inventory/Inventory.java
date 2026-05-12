@@ -15,9 +15,6 @@ import com.echoes.util.GameConstants;
  * Exhausted items (quantity zero) are not removed automatically — callers
  * should invoke {@link #removeExhaustedItems()} after use, or check
  * {@link Consumable#isExhausted()} before display to keep the inventory clean.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class Inventory {
 

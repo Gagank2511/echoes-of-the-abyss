@@ -22,9 +22,6 @@ import com.echoes.model.combat.AttackStrategy;
  * <p>Subclasses customise behaviour by overriding only the hook methods,
  * not the overall structure. This prevents code duplication and ensures
  * the turn sequence is always consistent.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public abstract class Enemy extends Character {
 

@@ -20,9 +20,6 @@ import com.echoes.model.item.ItemType;
  * validation and quantity logic is written once here and never duplicated.
  * Adding a new item type requires only a new subclass and an implementation
  * of the hook — no changes to existing code.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public abstract class AbstractConsumable implements Consumable {
 

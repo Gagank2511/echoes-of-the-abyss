@@ -16,9 +16,6 @@ import java.util.List;
  * <p>Adding a new listener requires no changes to any existing class —
  * simply subscribe it here. This satisfies the Open/Closed Principle:
  * the system is open for extension without modification of existing code.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class GameEventPublisher {
 

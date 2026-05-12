@@ -9,9 +9,6 @@ import com.echoes.application.GameApplication;
  * is delegated to {@link GameApplication}, which acts as the composition
  * root. Keeping this class thin means {@link GameApplication} can be
  * reused or tested without going through the JVM entry point.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class Main {
 

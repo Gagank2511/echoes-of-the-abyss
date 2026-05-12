@@ -14,9 +14,6 @@ import com.echoes.pattern.observer.GameEventListener;
  * They are stored as strings and displayed at the end of the run. Adding
  * new achievements requires only adding logic in {@link #onEvent(GameEvent)}
  * — no other class needs to change.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class AchievementTracker implements GameEventListener {
 

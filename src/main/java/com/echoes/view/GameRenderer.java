@@ -20,9 +20,6 @@ import com.echoes.pattern.observer.GameEventListener;
  * <p>Extending {@link GameEventListener} allows any renderer to subscribe
  * to the event bus and react inline to events such as level-ups, without
  * needing a separate notification mechanism.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public interface GameRenderer extends GameEventListener {
 

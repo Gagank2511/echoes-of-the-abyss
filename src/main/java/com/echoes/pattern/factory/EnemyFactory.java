@@ -15,9 +15,6 @@ import com.echoes.model.character.enemy.EnemyType;
  * <p>Adding a new enemy type requires only a new {@link Enemy} subclass and
  * a switch branch in each factory — no calling code needs to change.
  * Adding a new difficulty tier requires only a new factory implementation.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public interface EnemyFactory {
 
