@@ -14,9 +14,6 @@ import com.echoes.model.character.Character;
  * the character hierarchy. Adding a new attack type — for example, a poison
  * or fire attack — requires only a new class implementing this interface.
  * No existing character or combat code needs to change.</p>
- *
- * @author Your Name
- * @version 1.0
  * @see MeleeAttackStrategy
  * @see RangedAttackStrategy
  * @see MagicAttackStrategy
