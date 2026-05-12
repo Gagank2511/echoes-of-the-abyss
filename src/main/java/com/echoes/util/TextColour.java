@@ -7,9 +7,6 @@ package com.echoes.util;
  * append {@link #RESET} so that subsequent terminal text is not affected.
  * On terminals that do not support ANSI sequences the raw escape characters
  * will appear as text, but the game remains fully playable.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class TextColour {
 

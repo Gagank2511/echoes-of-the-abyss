@@ -17,9 +17,6 @@ package com.echoes.pattern.state;
  *   <li>Invalid transitions are prevented by design: a CombatState cannot
  *       accidentally execute exploration logic.</li>
  * </ul>
- *
- * @author Your Name
- * @version 1.0
  */
 public interface GameState {
 

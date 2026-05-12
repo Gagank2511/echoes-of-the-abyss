@@ -14,9 +14,6 @@ package com.echoes.pattern.command;
  *   <li>Future features such as action replay or undo require no changes to
  *       existing command implementations.</li>
  * </ul>
- *
- * @author Your Name
- * @version 1.0
  */
 public interface Command {
 

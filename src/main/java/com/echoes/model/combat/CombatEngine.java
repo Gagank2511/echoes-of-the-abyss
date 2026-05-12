@@ -14,9 +14,6 @@ import com.echoes.util.GameConstants;
  * calculation is made here and takes effect everywhere. The combat state
  * machine lives in {@link com.echoes.pattern.state.CombatState}; this
  * class only performs calculations and returns structured results.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class CombatEngine {
 

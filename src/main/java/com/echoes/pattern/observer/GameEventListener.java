@@ -8,9 +8,6 @@ package com.echoes.pattern.observer;
  * interface and registers itself with the publisher. The publisher fires
  * events without knowing or caring which listeners are attached — this
  * loose coupling is the core benefit of the <em>Observer</em> pattern.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public interface GameEventListener {
 

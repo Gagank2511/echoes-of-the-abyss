@@ -23,9 +23,6 @@ import com.echoes.util.GameConstants;
  *             .withFloorCount(5)
  *             .build();
  * </pre>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class DungeonBuilder {
 

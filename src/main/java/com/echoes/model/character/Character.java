@@ -17,9 +17,6 @@ import com.echoes.model.combat.AttackStrategy;
  * <p>Subclasses extend this with domain-specific behaviour. {@link Player}
  * adds experience tracking and an inventory; enemy subclasses add drop
  * rewards and special abilities.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public abstract class Character {
 

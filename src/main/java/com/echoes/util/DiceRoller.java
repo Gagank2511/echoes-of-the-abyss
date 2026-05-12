@@ -9,9 +9,6 @@ import java.util.Random;
  * replaced with a seeded version via {@link #seed(long)} to produce
  * deterministic results in unit tests — ensuring tests are repeatable
  * and not dependent on chance.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class DiceRoller {
 

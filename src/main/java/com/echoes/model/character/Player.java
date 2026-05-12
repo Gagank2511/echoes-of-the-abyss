@@ -17,9 +17,6 @@ import com.echoes.util.GameConstants;
  * <p>The override of {@link #getAttackPower()} ensures that all attack
  * strategies automatically use the effective (boosted) value without any
  * special-casing in the combat logic itself.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class Player extends Character {
 

@@ -27,7 +27,7 @@ import com.echoes.view.ConsoleRenderer;
  *   <li>Controller — receives all dependencies and starts the game loop.</li>
  * </ol>
  *
- * @author Your Name
+ * @author Gagandeep Kaur
  * @version 1.0
  */
 public final class GameApplication {

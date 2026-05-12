@@ -11,9 +11,6 @@ import java.util.List;
  * <p>Part of the <em>Command</em> design pattern. The history can be
  * inspected for display, statistics, or future undo and replay features.
  * A capacity cap prevents unbounded memory growth over long play sessions.</p>
- *
- * @author Your Name
- * @version 1.0
  */
 public final class CommandHistory {
 
