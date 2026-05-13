@@ -2,8 +2,19 @@ package com.echoes.model.character.enemy;
 
 import com.echoes.model.combat.MeleeAttackStrategy;
 
+/**
+ * A basic melee enemy that attacks with a cleaver.
+ *
+ * <p>Goblins are weak individually but can be encountered in groups.
+ * They use melee attacks and have low health and defence.</p>
+ */
 public final class Goblin extends Enemy {
 
+    /**
+     * Constructs a goblin scaled to the given floor level.
+     *
+     * @param floorLevel the dungeon floor level for stat scaling
+     */
     public Goblin(final int floorLevel) {
         super(
             "Goblin",

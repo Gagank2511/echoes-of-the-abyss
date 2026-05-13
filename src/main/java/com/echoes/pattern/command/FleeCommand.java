@@ -8,6 +8,13 @@ import com.echoes.pattern.observer.GameEventPublisher;
 import com.echoes.pattern.observer.GameEventType;
 import com.echoes.view.GameRenderer;
 
+/**
+ * Command to attempt fleeing from combat.
+ *
+ * <p>This command tries to escape the current fight. Fleeing from bosses
+ * is impossible, and regular enemies have a chance to prevent escape.
+ * It implements the Command pattern for undoable actions.</p>
+ */
 public final class FleeCommand implements Command {
 
     private final Enemy enemy;
@@ -16,6 +23,14 @@ public final class FleeCommand implements Command {
     private final GameEventPublisher eventPublisher;
     private boolean fleeSuccessful;
 
+    /**
+     * Constructs a flee command with the necessary dependencies.
+     *
+     * @param enemy          the enemy being fled from
+     * @param combatEngine   the combat calculation service
+     * @param renderer       the view for displaying results
+     * @param eventPublisher the event bus for notifications
+     */
     public FleeCommand(final Enemy enemy,
                        final CombatEngine combatEngine,
                        final GameRenderer renderer,

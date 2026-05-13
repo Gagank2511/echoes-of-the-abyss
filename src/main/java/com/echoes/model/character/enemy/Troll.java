@@ -2,11 +2,22 @@ package com.echoes.model.character.enemy;
 
 import com.echoes.model.combat.MeleeAttackStrategy;
 
+/**
+ * A regenerating melee enemy that heals itself each turn.
+ *
+ * <p>Trolls are tough opponents with high health and defence. They regenerate
+ * health at the start of their turn, making prolonged fights dangerous.</p>
+ */
 public final class Troll extends Enemy {
 
     private static final int REGEN_PER_TURN = 6;
     private String lastTurnEffect = "";
 
+    /**
+     * Constructs a cave troll scaled to the given floor level.
+     *
+     * @param floorLevel the dungeon floor level for stat scaling
+     */
     public Troll(final int floorLevel) {
         super(
             "Cave Troll",

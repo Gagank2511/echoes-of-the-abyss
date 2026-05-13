@@ -14,6 +14,13 @@ import com.echoes.model.item.consumable.Consumable;
 import com.echoes.pattern.observer.GameEvent;
 import com.echoes.util.TextColour;
 
+/**
+ * Console-based implementation of the game renderer.
+ *
+ * <p>This class handles all visual output to the terminal, using ANSI colour
+ * codes for styling and formatting. It implements the {@link GameRenderer}
+ * interface to provide a text-based user interface for the dungeon crawler game.</p>
+ */
 public final class ConsoleRenderer implements GameRenderer {
 
     private static final int SEPARATOR_WIDTH = 60;

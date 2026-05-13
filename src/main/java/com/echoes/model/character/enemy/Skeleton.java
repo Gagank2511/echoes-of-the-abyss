@@ -2,8 +2,19 @@ package com.echoes.model.character.enemy;
 
 import com.echoes.model.combat.RangedAttackStrategy;
 
+/**
+ * An undead ranged enemy that attacks with a bow.
+ *
+ * <p>Skeletons are fragile but can attack from a distance, making them
+ * dangerous in groups. They have low health but decent defence for their type.</p>
+ */
 public final class Skeleton extends Enemy {
 
+    /**
+     * Constructs a skeleton scaled to the given floor level.
+     *
+     * @param floorLevel the dungeon floor level for stat scaling
+     */
     public Skeleton(final int floorLevel) {
         super(
             "Skeleton",

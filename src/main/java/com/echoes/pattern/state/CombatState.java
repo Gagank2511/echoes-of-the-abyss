@@ -13,10 +13,22 @@ import com.echoes.pattern.command.FleeCommand;
 import com.echoes.pattern.observer.GameEvent;
 import com.echoes.pattern.observer.GameEventType;
 
+/**
+ * Game state for handling turn-based combat encounters.
+ *
+ * <p>In this state, the player can attack, use items, or attempt to flee.
+ * Combat continues until either the enemy is defeated or the player flees
+ * or is defeated. This implements the State pattern for managing combat flow.</p>
+ */
 public final class CombatState implements GameState {
 
     private final Enemy enemy;
 
+    /**
+     * Constructs a combat state for fighting the given enemy.
+     *
+     * @param enemy the enemy to fight
+     */
     public CombatState(final Enemy enemy) {
         this.enemy = java.util.Objects.requireNonNull(enemy);
     }

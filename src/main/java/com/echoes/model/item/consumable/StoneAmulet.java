@@ -2,8 +2,17 @@ package com.echoes.model.item.consumable;
 
 import com.echoes.util.GameConstants;
 
+/**
+ * A consumable item that permanently increases defence.
+ *
+ * <p>The Stone Amulet provides a permanent defence bonus when consumed.
+ * It is a single-use item that is exhausted after use.</p>
+ */
 public final class StoneAmulet extends AbstractConsumable {
 
+    /**
+     * Constructs a new Stone Amulet.
+     */
     public StoneAmulet() {
         super(
             "Stone Amulet",

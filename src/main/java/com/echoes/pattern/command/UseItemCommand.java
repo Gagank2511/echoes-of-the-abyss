@@ -8,6 +8,14 @@ import com.echoes.pattern.observer.GameEventPublisher;
 import com.echoes.pattern.observer.GameEventType;
 import com.echoes.view.GameRenderer;
 
+/**
+ * Command to use a consumable item.
+ *
+ * <p>This command applies the item's effect to the player, displays
+ * the result, removes exhausted items from inventory, and publishes
+ * the appropriate game event. It implements the Command pattern for
+ * undoable actions.</p>
+ */
 public final class UseItemCommand implements Command {
 
     private final Player player;
@@ -15,6 +23,14 @@ public final class UseItemCommand implements Command {
     private final GameRenderer renderer;
     private final GameEventPublisher eventPublisher;
 
+    /**
+     * Constructs a use item command with the necessary dependencies.
+     *
+     * @param player         the player using the item
+     * @param item           the consumable item to use
+     * @param renderer       the view for displaying results
+     * @param eventPublisher the event bus for notifications
+     */
     public UseItemCommand(final Player player,
                           final Consumable item,
                           final GameRenderer renderer,

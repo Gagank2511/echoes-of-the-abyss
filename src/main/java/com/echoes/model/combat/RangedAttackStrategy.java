@@ -4,6 +4,14 @@ import com.echoes.model.character.Character;
 import com.echoes.util.DiceRoller;
 import com.echoes.util.GameConstants;
 
+/**
+ * Attack strategy for ranged combat, using projectile-based attacks.
+ *
+ * <p>This strategy includes a chance to miss based on accuracy rolls, making
+ * ranged attacks less reliable than melee but potentially more damaging.
+ * Critical hits are possible, and damage is calculated similarly to melee
+ * but with different dice.</p>
+ */
 public final class RangedAttackStrategy implements AttackStrategy {
 
     @Override

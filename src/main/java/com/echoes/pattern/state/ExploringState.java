@@ -7,6 +7,13 @@ import com.echoes.model.dungeon.Room;
 import com.echoes.model.item.consumable.Consumable;
 import com.echoes.pattern.command.MoveCommand;
 
+/**
+ * Game state for exploring dungeon rooms.
+ *
+ * <p>In this state, the player can move between rooms, check stats, view inventory,
+ * or encounter enemies. If an enemy is present, the state transitions to combat.
+ * This implements the State pattern for managing game flow.</p>
+ */
 public final class ExploringState implements GameState {
 
     @Override

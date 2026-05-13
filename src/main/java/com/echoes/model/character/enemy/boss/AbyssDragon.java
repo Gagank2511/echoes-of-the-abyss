@@ -7,10 +7,22 @@ import com.echoes.model.combat.MagicAttackStrategy;
 import com.echoes.util.DiceRoller;
 import com.echoes.util.GameConstants;
 
+/**
+ * The final boss, a massive dragon with devastating void flame attacks.
+ *
+ * <p>The Abyss Dragon has extremely high stats and a powerful special ability
+ * that deals massive void damage, ignoring most defence. It is the ultimate
+ * challenge at the end of the dungeon.</p>
+ */
 public final class AbyssDragon extends BossEnemy {
 
     private static final double VOID_FIRE_ARMOUR_FRACTION = 0.25;
 
+    /**
+     * Constructs the Abyss Dragon scaled to the given floor level.
+     *
+     * @param floorLevel the dungeon floor level for stat scaling
+     */
     public AbyssDragon(final int floorLevel) {
         super(
             "Abyss Dragon",

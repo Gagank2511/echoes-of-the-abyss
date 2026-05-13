@@ -7,8 +7,20 @@ import com.echoes.model.combat.MeleeAttackStrategy;
 import com.echoes.util.DiceRoller;
 import com.echoes.util.GameConstants;
 
+/**
+ * A massive stone construct boss with a powerful seismic slam ability.
+ *
+ * <p>Stone golems have extremely high health and defence, making them
+ * formidable tank enemies. Their special ability deals area damage that
+ * ignores defence.</p>
+ */
 public final class StoneGolem extends BossEnemy {
 
+    /**
+     * Constructs a stone golem scaled to the given floor level.
+     *
+     * @param floorLevel the dungeon floor level for stat scaling
+     */
     public StoneGolem(final int floorLevel) {
         super(
             "Stone Golem",

@@ -4,12 +4,25 @@ import com.echoes.model.dungeon.Dungeon;
 import com.echoes.model.dungeon.Floor;
 import com.echoes.view.GameRenderer;
 
+/**
+ * Command to move the player forward in the dungeon.
+ *
+ * <p>This command advances the player to the next room or floor if possible,
+ * following the rules of dungeon progression. It implements the Command pattern
+ * for undoable actions.</p>
+ */
 public final class MoveCommand implements Command {
 
     private final Dungeon dungeon;
     private final GameRenderer renderer;
     private boolean moved;
 
+    /**
+     * Constructs a move command with the necessary dependencies.
+     *
+     * @param dungeon  the dungeon to navigate
+     * @param renderer the renderer for displaying messages
+     */
     public MoveCommand(final Dungeon dungeon, final GameRenderer renderer) {
         this.dungeon = dungeon;
         this.renderer = renderer;

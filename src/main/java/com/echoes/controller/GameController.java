@@ -14,6 +14,14 @@ import com.echoes.pattern.state.GameContext;
 import com.echoes.util.GameConstants;
 import com.echoes.view.GameRenderer;
 
+/**
+ * The main game controller that orchestrates the game loop and user interactions.
+ *
+ * <p>This class manages the overall flow of the game, from player creation to
+ * the main loop that processes user input and updates the game state. It
+ * coordinates between the dungeon, input handling, rendering, event publishing,
+ * and tracking systems.</p>
+ */
 public final class GameController {
 
     private final Dungeon dungeon;
@@ -23,6 +31,15 @@ public final class GameController {
     private final ScoreTracker scoreTracker;
     private final AchievementTracker achievementTracker;
 
+    /**
+     * Constructs a game controller with all necessary dependencies.
+     *
+     * @param dungeon        the dungeon to explore
+     * @param inputHandler   handles user input
+     * @param renderer       renders the game state to the console
+     * @param eventPublisher publishes game events to listeners
+     * @param scoreTracker   tracks the player's score
+     */
     public GameController(final Dungeon dungeon,
                           final InputHandler inputHandler,
                           final GameRenderer renderer,
@@ -40,6 +57,13 @@ public final class GameController {
                 .orElse(new AchievementTracker());
     }
 
+    /**
+     * Starts and runs the main game loop until the game ends.
+     *
+     * <p>This method initialises the player, sets up the game context, and
+     * enters a loop that reads user input and processes it until the game
+     * reaches a terminal state. Finally, it displays the end-of-game summary.</p>
+     */
     public void run() {
         renderer.displayTitleScreen();
         Player player = createPlayer();

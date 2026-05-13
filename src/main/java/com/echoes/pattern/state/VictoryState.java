@@ -3,6 +3,12 @@ package com.echoes.pattern.state;
 import com.echoes.pattern.observer.GameEvent;
 import com.echoes.pattern.observer.GameEventType;
 
+/**
+ * Terminal game state representing victory after clearing the dungeon.
+ *
+ * <p>This state displays the victory screen and publishes the dungeon cleared
+ * event. It is a terminal state, meaning the game ends here.</p>
+ */
 public final class VictoryState implements GameState {
 
     @Override

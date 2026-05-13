@@ -7,10 +7,22 @@ import com.echoes.model.combat.MagicAttackStrategy;
 import com.echoes.util.DiceRoller;
 import com.echoes.util.GameConstants;
 
+/**
+ * A powerful undead sorcerer boss with soul-draining abilities.
+ *
+ * <p>Liches are magic-focused bosses with high attack power. Their special
+ * ability drains health from the player and heals the lich, making prolonged
+ * fights risky.</p>
+ */
 public final class Lich extends BossEnemy {
 
     private static final double SOUL_DRAIN_LEECH = 0.4;
 
+    /**
+     * Constructs a lich scaled to the given floor level.
+     *
+     * @param floorLevel the dungeon floor level for stat scaling
+     */
     public Lich(final int floorLevel) {
         super(
             "The Lich",

@@ -4,6 +4,13 @@ import com.echoes.model.character.Character;
 import com.echoes.util.DiceRoller;
 import com.echoes.util.GameConstants;
 
+/**
+ * Attack strategy for magic combat, using arcane spells that penetrate defence.
+ *
+ * <p>Magic attacks ignore a portion of the target's defence, making them effective
+ * against heavily armoured opponents. They have higher base damage potential
+ * but follow the same critical hit mechanics as other strategies.</p>
+ */
 public final class MagicAttackStrategy implements AttackStrategy {
 
     @Override

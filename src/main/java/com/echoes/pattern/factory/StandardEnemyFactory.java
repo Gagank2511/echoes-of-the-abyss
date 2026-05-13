@@ -10,6 +10,12 @@ import com.echoes.model.character.enemy.boss.AbyssDragon;
 import com.echoes.model.character.enemy.boss.Lich;
 import com.echoes.model.character.enemy.boss.StoneGolem;
 
+/**
+ * Standard implementation of the enemy factory.
+ *
+ * <p>This factory creates standard-difficulty enemies for the given type
+ * and floor level, scaling their stats appropriately.</p>
+ */
 public final class StandardEnemyFactory implements EnemyFactory {
 
     @Override

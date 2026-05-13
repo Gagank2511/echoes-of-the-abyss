@@ -17,15 +17,32 @@ import com.echoes.pattern.factory.StandardEnemyFactory;
 import com.echoes.util.DiceRoller;
 import com.echoes.util.GameConstants;
 
+/**
+ * Builder for constructing individual dungeon floors with rooms, enemies, and items.
+ *
+ * <p>This class generates a complete floor layout including entrance, monster,
+ * treasure, and boss rooms. It uses procedural generation with some randomness
+ * to create varied dungeon experiences.</p>
+ */
 public final class FloorBuilder {
 
     private static final EnemyFactory FACTORY = new StandardEnemyFactory();
     private final int floorNumber;
 
+    /**
+     * Constructs a floor builder for the specified floor number.
+     *
+     * @param floorNumber the number of the floor to build
+     */
     public FloorBuilder(final int floorNumber) {
         this.floorNumber = floorNumber;
     }
 
+    /**
+     * Builds and returns a complete floor with all rooms populated.
+     *
+     * @return the constructed floor
+     */
     public Floor build() {
         List<Room> rooms = new ArrayList<>();
         rooms.add(buildEntranceRoom());

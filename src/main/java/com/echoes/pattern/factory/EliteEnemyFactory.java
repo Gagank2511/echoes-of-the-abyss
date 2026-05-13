@@ -10,6 +10,13 @@ import com.echoes.model.character.enemy.boss.AbyssDragon;
 import com.echoes.model.character.enemy.boss.Lich;
 import com.echoes.model.character.enemy.boss.StoneGolem;
 
+/**
+ * Factory for creating elite enemies with enhanced stats.
+ *
+ * <p>This factory produces enemies that are one level higher than
+ * the requested floor level, making them more challenging. It implements
+ * the Factory pattern for enemy creation.</p>
+ */
 public final class EliteEnemyFactory implements EnemyFactory {
 
     private static final int ELITE_LEVEL_BOOST = 1;

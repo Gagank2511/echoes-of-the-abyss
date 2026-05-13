@@ -2,8 +2,17 @@ package com.echoes.model.item.consumable;
 
 import com.echoes.util.GameConstants;
 
+/**
+ * A consumable item that permanently increases attack power.
+ *
+ * <p>The Power Crystal provides a permanent attack bonus when consumed.
+ * It is a single-use item that is exhausted after use.</p>
+ */
 public final class PowerCrystal extends AbstractConsumable {
 
+    /**
+     * Constructs a new Power Crystal.
+     */
     public PowerCrystal() {
         super(
             "Power Crystal",

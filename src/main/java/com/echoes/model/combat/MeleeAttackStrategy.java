@@ -4,6 +4,13 @@ import com.echoes.model.character.Character;
 import com.echoes.util.DiceRoller;
 import com.echoes.util.GameConstants;
 
+/**
+ * Attack strategy for melee combat, using close-range physical attacks.
+ *
+ * <p>This strategy calculates damage based on the attacker's power minus the
+ * target's defence, with a chance for critical hits. It uses dice rolls for
+ * accuracy and damage calculation to introduce randomness.</p>
+ */
 public final class MeleeAttackStrategy implements AttackStrategy {
 
     @Override
