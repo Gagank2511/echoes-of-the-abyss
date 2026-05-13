@@ -5,6 +5,12 @@ import com.echoes.model.item.consumable.Consumable;
 import com.echoes.pattern.command.UseItemCommand;
 import java.util.List;
 
+/**
+ * Handles inventory item selection and item usage during gameplay.
+ * This state allows the player to interact with consumable items
+ * separately from exploration and combat behaviour.
+ */
+
 public final class ItemSelectionState implements GameState {
 
     private final Enemy enemy;
